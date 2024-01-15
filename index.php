@@ -8,6 +8,7 @@
             $stmt->bindParam("username", $_POST["username"], PDO::PARAM_STR);
             $stmt->execute();
             $passHash = $stmt->fetch(PDO::FETCH_ASSOC)["passHash"];
+            var_dump ($passHash);
             if($passHash and password_verify($_POST["pass"], $passHash)){
                 session_start();
                 $_SESSION["username"] = $_POST["username"];
@@ -32,7 +33,7 @@
         </head>
     <body>
         <div class="center">
-    <form class="form" action="index.php" method="post">
+    <form action="index.php" method="post" class="form" >
   <div class="title">Welcome,<br><span>sign up to continue</span></div>
   <input type="text" name="username" id="username"class="input" placeholder="Username">
   <input type="password" placeholder="Password" name="password" class="input">
