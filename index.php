@@ -3,18 +3,20 @@
     include_once("database.php");
     
     if($_SERVER["REQUEST_METHOD"] == "POST"){
-        $stmt = $db_handler->prepare("SELECT passHash FROM accounts WHERE username = :username");
-        $stmt->bindParam("username", $_POST["username"], PDO::PARAM_STR);
-        $stmt->execute();
-        $passHash = $stmt->fetch(PDO::FETCH_ASSOC)["passHash"];
-        if($passHash and password_verify($_POST["pass"], $passHash)){
-            session_start();
-            $_SESSION["username"] = $_POST["username"];
-            header("location:succes.php");
-        }
-        else{
-            echo "<p style='color:red;'>Wrong password</p>";
-        }
+        try{
+            $stmt = $db_handler->prepare("SELECT passHash FROM accounts WHERE username = :username");
+            $stmt->bindParam("username", $_POST["username"], PDO::PARAM_STR);
+            $stmt->execute();
+            $passHash = $stmt->fetch(PDO::FETCH_ASSOC)["passHash"];
+            if($passHash and password_verify($_POST["pass"], $passHash)){
+                session_start();
+                $_SESSION["username"] = $_POST["username"];
+                header("location:succes.php");
+            }
+            else{
+                echo "<p style='color:red;'>Wrong password</p>";
+            }
+        }catch(Exception $ex){echo$ex}
     }
 ?>
 
