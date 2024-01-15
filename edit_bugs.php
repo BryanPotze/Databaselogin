@@ -1,5 +1,5 @@
 <?php
-$locatie = "mysql";
+$locatie = "localhost";
 $databasenaam = "bugreporterdb";
 $gebruikersnaam = "root";
 $wachtwoord = "qwerty";
