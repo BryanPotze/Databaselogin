@@ -34,7 +34,7 @@
         <div class="center">
     <form class="form" action="index.php" method="post">
   <div class="title">Welcome,<br><span>sign up to continue</span></div>
-  <input type="text" name="username" id="username"class="input" placeholder="Email">
+  <input type="text" name="username" id="username"class="input" placeholder="Username">
   <input type="password" placeholder="Password" name="password" class="input">
   <div class="login-with">
   </div>
