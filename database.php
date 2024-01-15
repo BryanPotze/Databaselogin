@@ -1,7 +1,7 @@
 <?php
     $locatie = "mysql";
-    $databasenaam = "logindb";
-    $gebruikersnaam = "kees";
+    $databasenaam = "m3t";
+    $gebruikersnaam = "Kees";
     $wachtwoord = "Qwerty1234";
 
     try{
