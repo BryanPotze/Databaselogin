@@ -1,6 +1,6 @@
 <?php
 $locatie = "localhost";
-$databasenaam = "bugreporterdb";
+$databasenaam = "m3t";
 $gebruikersnaam = "Kees";
 $wachtwoord = "Qwerty1234";
 
