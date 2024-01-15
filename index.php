@@ -36,7 +36,7 @@
     <form action="index.php" method="post" class="form" >
   <div class="title">Welcome,<br><span>sign up to continue</span></div>
   <input type="text" name="username" id="username"class="input" placeholder="Username">
-  <input type="password" placeholder="Password" name="password" class="input">
+  <input type="password" placeholder="Password" name="pass" id="pass" class="input">
   <div class="login-with">
   </div>
   <input type="submit" value="Login"class="button-confirm"></input>
