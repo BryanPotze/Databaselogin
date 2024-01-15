@@ -11,13 +11,13 @@
     </head>
     <body>
         <h1>Register</h1>
-        <form action="register.php" method="post" style="display:flex;flex-direction:column;width:20vw;gap:10px;">
+        <form action="register.php" method="post" class="form">
             <label for="username">Username</label>
-            <input type="text" name="username" id="username">
+            <input type="text" name="username" id="username"class="input">
             <label for="e-mail">E-mail</label>
-            <input type="email" name="e-mail" id="e-mail">
+            <input type="email" name="e-mail" id="e-mail"class="input">
             <label for="pass">Password</label>
-            <input type="password" name="pass" id="pass">
+            <input type="password" name="pass" id="pass"class="input">
             <label for="passRepeat">Repeat Password</label>
             <input type="password" name="passRepeat" id="passRepeat">
             <input type="submit" value="Create Account">
