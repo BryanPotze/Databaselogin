@@ -1,5 +1,5 @@
 <?php
-$locatie = "mysql";
+$locatie = "local";
 $databasenaam = "m3t";
 $gebruikersnaam = "Kees";
 $wachtwoord = "Qwerty1234";
