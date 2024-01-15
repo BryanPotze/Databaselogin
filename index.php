@@ -16,7 +16,9 @@
             else{
                 echo "<p style='color:red;'>Wrong password</p>";
             }
-        }catch(Exception $ex){echo$ex}
+        }catch(Exception $ex){
+            echo $ex;
+        }
     }
 ?>
 
