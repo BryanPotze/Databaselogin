@@ -21,7 +21,7 @@
             <input type="password" name="pass" id="pass"class="input">
             <label for="passRepeat">Repeat Password</label>
             <input type="password" name="passRepeat" id="passRepeat"class="input">
-            <input type="submit" value="Create Account"class="button-confirm">
+            <input type="submit" value="Create Account" class="button-confirm_new">
         </form>
         <a href="index.php">Log in to existing account</a>
 
