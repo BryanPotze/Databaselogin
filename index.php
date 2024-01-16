@@ -8,7 +8,6 @@
             $stmt->bindParam("username", $_POST["username"], PDO::PARAM_STR);
             $stmt->execute();
             $passHash = $stmt->fetch(PDO::FETCH_ASSOC)["passHash"];
-            var_dump ($passHash);
             if($passHash and password_verify($_POST["pass"], $passHash)){
                 session_start();
                 $_SESSION["username"] = $_POST["username"];
